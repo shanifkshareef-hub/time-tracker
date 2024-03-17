@@ -1,0 +1,40 @@
+{
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "generate": "drizzle-kit generate:pg",
+    "migrate": "drizzle-kit generate:pg && drizzle-kit push:pg",
+    "seed": "tsx drizzle/seed.ts",
+    "esbuild": "node ./builder/build.js",
+    "test": "jest --watch"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.8.2",
+    "@hono/zod-openapi": "^0.9.8",
+    "@t3-oss/env-core": "^0.9.1",
+    "@types/jsonwebtoken": "^9.0.6",
+    "bcryptjs": "^2.4.3",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.29.4",
+    "drizzle-zod": "^0.5.1",
+    "esbuild": "^0.19.4",
+    "esbuild-plugin-tsc": "^0.4.0",
+    "hono": "^4.0.8",
+    "jest-extended": "^4.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3",
+    "postgres": "^3.4.3",
+    "ts-jest": "^29.1.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.17",
+    "@types/pg": "^8.11.2",
+    "@types/supertest": "^6.0.2",
+    "drizzle-kit": "^0.20.14",
+    "jest": "^29.7.0",
+    "tsx": "^3.12.2",
+    "typescript": "^5.3.3"
+  }
+}
